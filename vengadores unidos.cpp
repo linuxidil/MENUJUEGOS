@@ -1300,11 +1300,12 @@ if(b1.mo==2)
   endwin();  
   }
   return 0;
-	
+	}
 	
 	break;
 	
-	case 2:{
+	case 2:
+	{
 	tron inicio;
 	initscr();
         noecho();
@@ -1366,9 +1367,24 @@ if(b1.mo==2)
 		}
 		break;
 		
-	}	
+		
+		case 4: {
 
+Mastermind my_juego;
+cout<<"BIENVENIDO A MASTERMIND CON MATRICES"<<endl<<"Las instrucciones son las siguientes:"<<endl;
+cout<<"1. Se generara un codigo de 5 numeros del 0 al 9."<<endl<<"2. Usted tendra 5 oportunidades para adivirarlo."<<endl;
+cout<<"3. Se corregira cada digito con el uso de posiciones de matrices independientemente"<<endl;
+my_juego.matriz();
+my_juego.comparar();
+return 0;
+
+
+
+
+}
+break;
 
  
 	}	
+}
 }
